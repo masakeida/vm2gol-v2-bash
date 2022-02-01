@@ -1,5 +1,5 @@
 _to_hex() {
-  od --address-radix=n --format=x1 --output-duplicates \
+  od -A n -t x1 -v \
     | tr " " "\n" \
     | grep -v '^$'
 }

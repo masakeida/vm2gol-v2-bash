@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -o nounset
 
@@ -22,7 +22,7 @@ MAX_ID_COMPILE=27
 
 ERRS=""
 
-BASH_CMD=/bin/bash
+BASH_CMD="/usr/bin/env bash"
 
 run_test_utils() {
   $BASH_CMD test/test_utils.sh
